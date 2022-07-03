@@ -51,12 +51,6 @@ function CV() {
                                 <li>
                                     Worked with version control and continous integration on GitHub.
                                 </li>
-                                {/* <li>
-                                    Good communication skills
-                                </li> */}
-                                {/* <li>
-                                    DevOps: configured and maintained web servers through GCP and SSH.
-                                </li> */}
                                 <li>
                                     Fast and creative problem solving.
                                 </li>
