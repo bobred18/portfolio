@@ -1,6 +1,7 @@
 import './Contact.css';
 
 function Contact(props: any) {
+
     return <div id='contact'>
         <div className={`container text-center bg-light shadow-5 p-3 py-5`} style={{ borderRadius: '10px', zIndex: '1', animationDuration: '1s', animationFillMode: 'forwards' }}>
             <h1 className='fw-bold' style={{ color: '#222' }}>
@@ -35,6 +36,7 @@ function EmailButton() {
 }
 
 function TelButton() {
+
     function handleCopy() {
         navigator.clipboard.writeText('+48 881 733 641');
     }
