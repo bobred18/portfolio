@@ -1,4 +1,3 @@
-import { ReactPropTypes } from 'react';
 import './About.css';
 
 function About(props: any) {
