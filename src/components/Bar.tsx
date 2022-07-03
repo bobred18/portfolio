@@ -18,6 +18,13 @@ function Bar() {
 
     const [expand, setExpand] = useState(false);
 
+    /* 
+        Function responsiveClickCheck() explained:
+        FOR MOBILE: (hence window.innerWidth < 800).
+            This hides the bar after user clicks so that it doesn't cover huge part of the screen.
+        FOR DESKTOP: 
+            This does nothing. The bar is still visible so user can click on other links.
+    */
     function responsiveClickCheck() {
         if (window.innerWidth < 800) {
             setExpand(false);
