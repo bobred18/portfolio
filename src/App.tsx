@@ -12,8 +12,21 @@ function App() {
 
   const [step, setStep] = useState(0);
 
+  /*
+    Function condition() returns boolean value 
+    
+    1st expression:  
+    window.scrollY - distance in pixels from the top of the html element
+    
+    2nd expression:  
+    window.innerHeight * from, window.innerHeight * to - returns distances 
+    from the top of element accordingly to 
+    function arguments from and to which are numbers from 0 to 1. 
+  */
+
   function condition(from: number, to: number) {
     let curb = 1;
+    /* If site is in mobile increase compared value for better mobile experience */
     if (window.innerWidth < 500) {
       curb = 2.4;
     }
@@ -25,6 +38,7 @@ function App() {
     window.addEventListener('scroll', updateStep);
   });
 
+  /* Set step accordingly to value returned by condition */
   function updateStep() {
     console.log('updated step')
     if (condition(0, 0.25)) {
@@ -44,11 +58,10 @@ function App() {
   return (
     <div className="app h-100 w-100">
       <BrowserRouter>
-        {/* <div style={{ position: 'fixed', color: 'white', textShadow: '0px 0px 5px black', fontSize: '30px', lineHeight: '1', fontWeight: '700', padding: '6px' }}>{step}</div> */}
+        <DebugBox step={step} />
         <Routes>
           <Route path='/cv' element={<CV />} />
           <Route path='/' element={<Main step={step} />} />
-          {/* <Main step={step} /> */}
         </Routes>
       </BrowserRouter>
     </div>
@@ -64,6 +77,13 @@ function Main(props: any) {
     <Works step={step} />
     <Contact step={step} />
   </>;
+}
+
+/* Useful to visually debug step value for parallax effect */
+function DebugBox({ step }: any) {
+  return <div style={{ position: 'fixed', color: 'white', textShadow: '0px 0px 5px black', fontSize: '30px', lineHeight: '1', fontWeight: '700', padding: '6px' }}>
+    {step}
+  </div>
 }
 
 export default App;
