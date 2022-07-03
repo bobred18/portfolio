@@ -1,0 +1,86 @@
+.bar {
+    /* gap: 10px; */
+    /* padding: 10px; */
+    /* padding-right: 10px; */
+    /* padding-top: 10px; */
+    position: fixed;
+    /* background-color: green; */
+    border-radius: 0 0 0 34px;
+    right: 0;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border: 3px white solid;
+    border-radius: 100px;
+    transition: 0.4s;
+    box-shadow: 0px 0px 4px 1px #0004;
+    background-color: #0007;
+}
+
+.bar-link:hover, .bar-link:focus {
+    color: #eee;
+    background-color: #000;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 12.5px;
+    padding-left: 0;
+}
+
+.list-icon {
+    box-shadow: 0px 0px 4px 1px #0004;
+    background-color: #0008;
+    border-radius: 10px;
+    /* padding: 10px; */
+}
+
+/** Responsive Bar Section - Start **/
+.bar-links-box {
+    /* background-color: red; */
+    transition: 0.5s;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.bar-show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.bar-hidden {
+    transform: translateY(10px);
+    /* margin-top: -10px; */
+    opacity: 0;
+    /* padding: 0; */
+}
+
+@media (max-width: 800px) {
+    .bar-links-box {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background-color: black;
+        box-shadow: 0px 0px 0px 3px #fff8;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .bar-link {
+        width: calc(100vw - 120px);
+        text-align: center;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 3px solid white;
+    }
+}
+/** Responsive Bar Section - End **/

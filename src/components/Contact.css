@@ -1,0 +1,111 @@
+#contact {
+    margin-bottom: 80px;
+}
+
+.contact-btn, .contact-btn-inside, .tel-btn{
+    line-height: 1;
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg, rgb(221, 221, 62) 0%, rgb(251, 53, 53) 60%);
+    color: whitesmoke;
+    padding: 16px 48px;
+    border: 0;
+    border-radius: 24px;
+    width: 300px;
+    height: 48px;
+}
+
+.contact-btn-inside {
+    position: absolute;
+    opacity: 0;
+    background-color: purple;
+    background-image: linear-gradient(315deg, blue 0%, purple 74%);
+    /* transition: 0.2s; */
+    /* same values as padding .contact-btn */
+    margin-top: -16px;
+    margin-left: -48px; 
+    /* same values as padding in .contact-btn */
+}
+
+.contact-btn:hover .contact-btn-inside {
+    opacity: 1;
+}
+
+.contact-btn:hover .contact-btn-inside {
+    opacity: 1;
+}
+
+.contact-btn:hover  .tooltip-text {
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.contact-btn:focus  .tooltip-text {
+    color: white;
+    opacity: 1;
+    animation: jump-from-behind 0.4s forwards;
+    background-color: rgb(68, 68, 68, 0.9);
+    z-index: 1001;
+}
+
+.tooltip-text {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 35px;
+    color: #0000;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes jump-from-behind {
+    0% {
+        color: #0000;
+        background-color: #0000;
+        z-index: 0;
+        margin-top: 0px;
+        height: 0px;
+    }
+    
+    100% {
+        color: white;
+        background-color: #000000;
+        background-image: linear-gradient(315deg, #000000ee 0%, #414141ee 74%);
+        z-index: 1000;
+        margin-top: 10px;
+        height: 35px;
+    }
+}
+
+.contact-buttons-box {
+    gap: 8px;
+    /* max-width: 200px; */
+    /* background-color: purple; */
+    display: grid;
+    margin-inline: auto;
+    grid-template-columns: repeat(2, auto);
+    /* min-width: 100%; */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tel-btn {
+    /* color: white; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-family: monospace; */
+    /* font-weight: 1000; */
+    background-color: #111 !important;
+    background: linear-gradient(315deg, #333 0%, #111 100%) !important;
+    color: whitesmoke !important;
+}
+
+@media (max-width: 800px) {
+    .contact-buttons-box {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
