@@ -8,11 +8,7 @@
     max-width: 100vw;
     background-color: #c0c0c0;
     height: auto;
-    
     background-color: #fff;
-    /* transform: scale(1); */
-    /* margin-top: 20px; */
-
   }
   
   .sheet {
@@ -22,19 +18,12 @@
     width: 920px;
     padding: var(--sheet-padding);
     height: auto;
-
-    /* box-shadow: 2px 2px 2px gray; */
   }
   
   .more {
     text-align: end;
-    /* padding: 0 8px; */
-    /* margin-top: 84px; */
-    /* height: 100px; */
     padding-right: 8px;
     font-size: 14px;
-    
-    /* background-color: yellow; */
   }
   
   .cv-list {
@@ -44,15 +33,14 @@
   .job-title {
     font-size: 18px;
     font-weight: 500;
-    /* padding-top: 3px; */
     margin-bottom: 6px;
-    /* background-color: pink; */
   }
   
   .cv-contact-link {
     color: #007acc;
     text-decoration: none;
   }
+
   .cv-contact-link:hover {
     text-decoration: underline;
   }
@@ -78,7 +66,6 @@
     line-height: 1;
     margin: 8px 0;
     margin-left: 175px;
-    /* background-color: yellow; */
   }
   
   .picture {
@@ -93,7 +80,6 @@
   }
   
   .full-name {
-    /* color: #174465; */
     color: #105382;
     line-height: 1;
     margin: 0;
@@ -130,15 +116,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: pink; */
   }
   
     .main-part {
       display: flex;
       text-align: center;
       flex-direction: column;
-      /* grid-template-columns: 1fr; */
-      /* justify-content: center; */
       align-content: center;
     }
     
@@ -158,14 +141,11 @@
     }
   
     .journey-part {
-      /* background-color: pink; */
       display: grid;
       grid-template-columns: 1fr;
       border-top: 1px solid #0004;
-      /* column-gap: 5px; */
     }
     .journey-part:nth-child(2) {
-      /* background-color: red; */
       border-top: 0;
     }
   
@@ -177,4 +157,3 @@
       min-height: calc(100vh - var(--sheet-padding) * 0.4);
     }
   }
-  
