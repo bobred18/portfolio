@@ -1,10 +1,5 @@
 .bar {
-    /* gap: 10px; */
-    /* padding: 10px; */
-    /* padding-right: 10px; */
-    /* padding-top: 10px; */
     position: fixed;
-    /* background-color: green; */
     border-radius: 0 0 0 34px;
     right: 0;
     width: auto;
@@ -41,12 +36,10 @@
     box-shadow: 0px 0px 4px 1px #0004;
     background-color: #0008;
     border-radius: 10px;
-    /* padding: 10px; */
 }
 
 /** Responsive Bar Section - Start **/
 .bar-links-box {
-    /* background-color: red; */
     transition: 0.5s;
     display: flex;
     gap: 10px;
@@ -60,9 +53,7 @@
 
 .bar-hidden {
     transform: translateY(10px);
-    /* margin-top: -10px; */
     opacity: 0;
-    /* padding: 0; */
 }
 
 @media (max-width: 800px) {
