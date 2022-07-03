@@ -19,8 +19,7 @@
     opacity: 0;
     background-color: purple;
     background-image: linear-gradient(315deg, blue 0%, purple 74%);
-    /* transition: 0.2s; */
-    /* same values as padding .contact-btn */
+    /* same values as padding in .contact-btn */
     margin-top: -16px;
     margin-left: -48px; 
     /* same values as padding in .contact-btn */
@@ -79,23 +78,14 @@
 
 .contact-buttons-box {
     gap: 8px;
-    /* max-width: 200px; */
-    /* background-color: purple; */
     display: grid;
     margin-inline: auto;
     grid-template-columns: repeat(2, auto);
-    /* min-width: 100%; */
     flex-direction: row;
     justify-content: center;
 }
 
 .tel-btn {
-    /* color: white; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* font-family: monospace; */
-    /* font-weight: 1000; */
     background-color: #111 !important;
     background: linear-gradient(315deg, #333 0%, #111 100%) !important;
     color: whitesmoke !important;
