@@ -56,6 +56,7 @@ interface WorkData {
 }
 
 function Works(props: any) {
+
     const { step } = props;
 
     return <div id='works' className='w-100 d-flex font-2 fw-bold' style={{ height: '100%', flexDirection: 'column' }}>
@@ -65,13 +66,7 @@ function Works(props: any) {
             </h1>
             <hr />
             <div>
-
                 {worksList && worksList.map((work: WorkData) => <Card data={work} />)}
-                {/* <Card data={ } /> */}
-                {/* <Card data={ } /> */}
-                {/* <Card data={} /> */}
-                {/* <Card data={} /> */}
-
             </div>
         </div>
     </div>
