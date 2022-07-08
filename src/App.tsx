@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="app h-100 w-100">
       <BrowserRouter>
-        <DebugBox step={step} />
+        {/* <DebugBox step={step} /> */}
         <Routes>
           <Route path='/cv' element={<CV />} />
           <Route path='/' element={<Main step={step} />} />
