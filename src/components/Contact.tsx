@@ -51,7 +51,7 @@ function TelButton() {
 }
 
 function CVButton() {
-    return <a href='https://jcislocv.web.app' className='contact-btn tel-btn' style={{ fontWeight: '700' }}>CV</a>
+    return <a href='https://jcislo.web.app/cv' className='contact-btn tel-btn' style={{ fontWeight: '700' }}>CV</a>
 }
 
 export default Contact;
