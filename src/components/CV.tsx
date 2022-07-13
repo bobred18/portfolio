@@ -11,7 +11,7 @@ function CV() {
                         </div>
                         <div>
                             <h1 className='full-name'>JAKUB CISŁO</h1>
-                            <div className='heading-subtitle'>React Front End Developer</div>
+                            <div className='heading-subtitle'>Web Developer</div>
                             <div className='short-description'>Ambitious and communicative web developer. Love to find the best solutions for great apps.</div>
                         </div>
                         <div className='contact'>
@@ -41,22 +41,22 @@ function CV() {
                         <div className='text'>
                             <ul className='cv-list'>
                                 <li>
-                                    Front-end: JavaScript, TypeScript, React, Redux, Vue.js, Bootstrap, Material Design, Jest, Styled Components, jQuery, Sass
+                                    Front-end: JavaScript, TypeScript, React, Redux, Vue.js, Bootstrap, Material Design, Jest, Styled Components, jQuery, Sass, .NET
                                 </li>
                                 <li>
-                                    Back-end: I've worked on Node.js/Express. Designed and maintained several web app backends and multiplayer game servers.
-                                </li>
-                                <li>
-                                    Experience in graphic design and graphic applications (GIMP 2).
+                                    Back-end: Node, Express, Firebase, MySQL, ASP.NET. Designed and maintained several web app backends and multiplayer game servers.
                                 </li>
                                 <li>
                                     Worked with version control and continous integration on GitHub.
                                 </li>
                                 <li>
+                                    Experience in graphic design and graphic applications (GIMP 2).
+                                </li>
+                                <li>
                                     Fast and creative problem solving.
                                 </li>
                                 <li>
-                                    Can apply Test Driven Development with Jest.
+                                    Test Driven Development with Jest.
                                 </li>
                                 <li>
                                     I follow programming principles (like DRY, KISS, SOLID).
