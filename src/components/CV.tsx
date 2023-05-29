@@ -1,5 +1,23 @@
 import './CV.css';
 
+const SKILLS = [
+    "Front-end: JavaScript, TypeScript, React, Redux, Vue.js, Bootstrap, Material Design, Jest, Styled Components, jQuery, Sass, .NET",
+    "Back-end: Node, Express, Firebase, MySQL, ASP.NET. Designed and maintained several web app backends and multiplayer game servers.",
+    "Worked with version control and continous integration on GitHub.",
+    "Experience in graphic design and graphic applications (GIMP 2).",
+    "Fast and creative problem solving.",
+    "Test Driven Development with Jest.",
+    "I follow programming principles (like DRY, KISS, SOLID).",
+    "Cyber-security competition finalist (Cyberskiller Challenge 3 Poland)"
+];
+
+const OTHER_PERKS = [
+    "Music school degree on trumpet and piano.",
+    "In my spare time I like to create and edit videos.",
+    "I used to release, promote and distribute music albums digitally.",
+    "I like to play football and chess."
+]
+
 function CV() {
     return (
         <div className="cv">
@@ -11,16 +29,14 @@ function CV() {
                         </div>
                         <div>
                             <h1 className='full-name'>JAKUB CISŁO</h1>
-                            <div className='heading-subtitle'>Web Developer</div>
-                            <div className='short-description'>Ambitious and communicative web developer. Love to find the best solutions for great apps.</div>
+                            <div className='heading-subtitle'>Full Stack Developer</div>
+                            <div className='short-description'>Ambitious and communicative web developer. I love finding the best solutions for great apps.</div>
                         </div>
                         <div className='contact'>
                             <div>
                                 <b>TEL. NUMBER</b>
                             </div>
-                            {/* +48 881 733 641<br />
-                            +44 792 273 1812 */}
-                            +44 759 383 1695
+                            +48 881 733 641
                             <div>
                                 <b>PORTFOLIO</b>
                             </div>
@@ -40,30 +56,7 @@ function CV() {
                         </div>
                         <div className='text'>
                             <ul className='cv-list'>
-                                <li>
-                                    Front-end: JavaScript, TypeScript, React, Redux, Vue.js, Bootstrap, Material Design, Jest, Styled Components, jQuery, Sass, .NET
-                                </li>
-                                <li>
-                                    Back-end: Node, Express, Firebase, MySQL, ASP.NET. Designed and maintained several web app backends and multiplayer game servers.
-                                </li>
-                                <li>
-                                    Worked with version control and continous integration on GitHub.
-                                </li>
-                                <li>
-                                    Experience in graphic design and graphic applications (GIMP 2).
-                                </li>
-                                <li>
-                                    Fast and creative problem solving.
-                                </li>
-                                <li>
-                                    Test Driven Development with Jest.
-                                </li>
-                                <li>
-                                    I follow programming principles (like DRY, KISS, SOLID).
-                                </li>
-                                <li>
-                                    Used to participate in cyber-security programming competitions.
-                                </li>
+                                {SKILLS && SKILLS.map((skill: String) => <li>{skill}</li>)}
                             </ul>
                         </div>
                     </div>
@@ -179,18 +172,7 @@ function CV() {
                         </div>
                         <div className='text'>
                             <ul className='cv-list'>
-                                <li>
-                                    Music school degree on trumpet and piano.
-                                </li>
-                                <li>
-                                    In my spare time I like to create and edit videos.
-                                </li>
-                                <li>
-                                    I used to release, promote and distribute music albums digitally.
-                                </li>
-                                <li>
-                                    I like to play football and chess.
-                                </li>
+                                {OTHER_PERKS && OTHER_PERKS.map((perk: String) => <li>{perk}</li>)}
                             </ul>
                         </div>
                     </div>
